@@ -6,7 +6,7 @@ Cloud Foundry is a registered trademark of THE LINUX FOUNDATION. Any rights ther
 
 ## About this project
 
-Helm chart for [https://github.com/sap/cf-service-operator](https://github.com/sap/cf-service-operator)
+Helm chart for [https://github.com/sap/cf-service-operator](https://github.com/sap/cf-service-operator).
 
 ## Support, Feedback, Contributing
 
