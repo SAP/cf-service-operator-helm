@@ -7,9 +7,9 @@ nameOverride: ""
 replicaCount: 1
 image:
   # -- Image repository
-  repository: ghcr.io/sap/cf-service-operator
+  repository: abapcp-docker.common.repositories.cloud.sap/external-images/ghcr.io/sap/cf-service-operator
   # -- Image tag (defauls to .Chart.AppVersion)
-  tag: ""
+  tag: v0.4.10
   # -- Image pull policy
   pullPolicy: IfNotPresent
 # -- Image pull secrets

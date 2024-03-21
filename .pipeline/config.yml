@@ -1,0 +1,7 @@
+general:
+  artifactId: 'cf-service-operator'
+  imageInValuesYaml:
+  - image
+  - certController.image
+  - webhook.image
+  updateProduct: false
