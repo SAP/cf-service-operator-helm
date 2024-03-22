@@ -1,5 +1,2 @@
 general:
   artifactId: 'cf-service-operator'
-  imageInValuesYaml:
-  - image
-  updateProduct: false
