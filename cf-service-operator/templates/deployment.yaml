@@ -75,7 +75,7 @@ spec:
       serviceAccountName: {{ include "cf-service-operator.fullname" . }}
       automountServiceAccountToken: true
       containers:
-      - name: controller
+      - name: cf-service-operator
         image: {{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
