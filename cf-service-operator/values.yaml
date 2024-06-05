@@ -33,7 +33,8 @@ podSecurityContext: {}
 # -- Additional pod annotations
 podAnnotations: {}
 # -- Additional pod labels
-podLabels: {}
+podLabels:
+  - application-type: operator
 # -- Container security context
 securityContext: {}
 resources:
