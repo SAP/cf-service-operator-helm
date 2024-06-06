@@ -1,2 +1,4 @@
 general:
   artifactId: 'cf-service-operator'
+  productComponentName: 'k8s-cf-service-operator'
+  updateProduct: true
