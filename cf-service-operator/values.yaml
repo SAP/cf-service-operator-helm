@@ -61,3 +61,15 @@ webhook:
 
 # -- Enable SAP binding metadata (per default, can be overridden by annotation per binding object)
 enableSapBindingMetadata: false
+
+# -- Provide e.g. CF credentials (multiple) via external secrets custom resource
+externalSecrets:
+  enabled: false
+  data:
+    - name: cf-credentials
+      namespace: default
+      refreshInterval: 1h
+      secretPath: /path/in/secret/engine
+      secretStoreRef:
+        kind: ClusterSecretStore
+        name: name-of-secret-store
