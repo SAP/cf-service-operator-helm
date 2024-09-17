@@ -47,6 +47,12 @@ resources:
     memory: 20Mi
     # -- CPU request
     cpu: 0.01
+# -- Enable Resources Cache
+cache:
+  # -- Whether to enable the cache
+  enabled: false # default: false
+  # -- Cache expiration time
+  timeout: 1m    # default: 1m    
 webhook:
   certManager:
     # -- Whether to use cert-manager to manage webhook tls
