@@ -3,4 +3,4 @@ name: cf-service-operator
 description: A Helm chart for https://github.com/sap/cf-service-operator
 type: application
 version: 0.5.12
-appVersion: v0.5.7
+appVersion: v0.5.8
