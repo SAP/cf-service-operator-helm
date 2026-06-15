@@ -1,6 +1,6 @@
 # cf-service-operator
 
-![Version: 0.5.24](https://img.shields.io/badge/Version-0.5.24-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.5.17](https://img.shields.io/badge/AppVersion-v0.5.17-informational?style=flat-square)
+![Version: 0.5.25](https://img.shields.io/badge/Version-0.5.25-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.5.17](https://img.shields.io/badge/AppVersion-v0.5.17-informational?style=flat-square)
 
 A Helm chart for https://github.com/sap/cf-service-operator
 
@@ -30,6 +30,8 @@ A Helm chart for https://github.com/sap/cf-service-operator
 | resources.limits.cpu | float | `0.1` | CPU limit |
 | resources.requests.memory | string | `"20Mi"` | Memory request |
 | resources.requests.cpu | float | `0.01` | CPU request |
+| dnsPolicy | string | `"ClusterFirst"` |  |
+| hostNetwork | bool | `false` |  |
 | pdb.enabled | bool | `true` | Whether to create a PodDisruptionBudget for the webhook |
 | pdb.labels | object | `{}` | Labels to set on the PodDisruptionBudget |
 | pdb.annotations | object | `{}` | Annotations to set on the PodDisruptionBudget |
