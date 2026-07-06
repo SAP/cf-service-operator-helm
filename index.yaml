@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   cf-service-operator:
   - apiVersion: v2
+    appVersion: v0.5.18
+    created: "2026-07-06T08:42:55.963798995Z"
+    description: A Helm chart for https://github.com/sap/cf-service-operator
+    digest: a67b0d0313926d03bc0a29e6fa8b0baa313d922546a5082c8cdda875a54a8c88
+    name: cf-service-operator
+    type: application
+    urls:
+    - https://github.com/SAP/cf-service-operator-helm/releases/download/0.5.26/cf-service-operator-0.5.26.tgz
+    version: 0.5.26
+  - apiVersion: v2
     appVersion: v0.5.17
     created: "2026-06-15T11:19:24.606411669Z"
     description: A Helm chart for https://github.com/sap/cf-service-operator
@@ -531,4 +541,4 @@ entries:
     urls:
     - https://github.com/SAP/cf-service-operator-helm/releases/download/0.3.0/cf-service-operator-0.3.0.tgz
     version: 0.3.0
-generated: "2026-06-15T11:19:24.605549186Z"
+generated: "2026-07-06T08:42:55.963027512Z"
