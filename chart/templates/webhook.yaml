@@ -99,13 +99,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
   reinvocationPolicy: Never
 - admissionReviewVersions:
@@ -134,13 +131,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
   reinvocationPolicy: Never
 - admissionReviewVersions:
@@ -169,13 +163,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
   reinvocationPolicy: Never
 - admissionReviewVersions:
@@ -204,13 +195,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
   reinvocationPolicy: Never
 ---
@@ -252,13 +240,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
 - admissionReviewVersions:
   - v1
@@ -287,13 +272,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
 - admissionReviewVersions:
   - v1
@@ -322,13 +304,10 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail
 - admissionReviewVersions:
   - v1
@@ -357,11 +336,8 @@ webhooks:
   matchPolicy: Equivalent
   sideEffects: None
   timeoutSeconds: 10
+  {{- with .Values.webhook.namespaceSelector }}
   namespaceSelector:
-    matchExpressions:
-    - key: kubernetes.io/metadata.name
-      operator: NotIn
-      values: [kube-system, kube-public, kube-node-lease, flux-system, cs-bootstrap]
-    - key: gardener.cloud/purpose
-      operator: DoesNotExist
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   failurePolicy: Fail

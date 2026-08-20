@@ -62,6 +62,8 @@ pdb:
   # -- Number of pods that are unavailable after eviction as number or percentage (e.g: 50%); has higher precedence over `pdb.minAvailable`
   maxUnavailable: ""
 webhook:
+  # -- Namespace selector to apply to all webhooks (e.g. to exclude system namespaces)
+  namespaceSelector: {}
   certManager:
     # -- Whether to use cert-manager to manage webhook tls
     enabled: false
